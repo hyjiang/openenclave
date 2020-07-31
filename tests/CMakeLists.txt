@@ -129,6 +129,13 @@ if (UNIX
     if (WITH_EEID)
       add_subdirectory(eeid_plugin)
     endif ()
+
+    # OpenSSL tests would when the DEBUG_MALLOC is ON. This is
+    # due to the memory leak from the OpenSSL test framework
+    # that we directly use without modifications.
+    if (NOT USE_DEBUG_MALLOC)
+      add_subdirectory(openssl)
+    endif ()
   endif ()
 
   add_subdirectory(c99_compliant)
