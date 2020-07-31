@@ -42,6 +42,7 @@ tests/openssl/tests\..*$
 3rdparty/optee/patches/.*
 3rdparty/optee/optee_client/.*
 3rdparty/optee/optee_os/.*
+3rdparty/sgxsdk/include/.*
 3rdparty/openssl/.*
 devex/vsextension/ItemTemplates/.*
 devex/vsextension/ProjectTemplates/.*
